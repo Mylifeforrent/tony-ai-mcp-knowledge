@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>cn.bugstack</groupId>
-        <artifactId>ai-mcp-knowledge</artifactId>
+        <groupId>com.study.tony.ai</groupId>
+        <artifactId>tony-ai-mcp-knowledge</artifactId>
         <version>1.0.0</version>
     </parent>
 
@@ -77,7 +77,7 @@
     </dependencies>
 
     <build>
-        <finalName>ai-mcp-knowledge-app</finalName>
+        <finalName>tony-ai-mcp-knowledge-app</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -114,7 +114,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.4.3</version>
                 <configuration>
-                    <mainClass>cn.bugstack.knowledge.Application</mainClass>
+                    <mainClass>com.study.tony.ai.knowledge.Application</mainClass>
                     <layout>JAR</layout>
                 </configuration>
             </plugin>

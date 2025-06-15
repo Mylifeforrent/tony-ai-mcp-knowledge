@@ -1,4 +1,4 @@
-package cn.bugstack.knowledge.test;
+package com.study.tony.ai.knowledge.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

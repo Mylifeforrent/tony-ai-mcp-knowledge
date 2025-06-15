@@ -1,6 +1,6 @@
-package cn.bugstack.knowledge.test;
+package com.study.tony.ai.knowledge.test;
 
-import cn.bugstack.knowledge.test.Utils.TokenTextSplitterWithContext;
+import com.study.tony.ai.knowledge.test.Utils.TokenTextSplitterWithContext;
 import com.alibaba.fastjson.JSON;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,6 @@ import org.springframework.ai.model.Media;
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.ai.ollama.api.OllamaOptions;
 import org.springframework.ai.reader.tika.TikaDocumentReader;
-import org.springframework.ai.transformer.splitter.TextSplitter;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
@@ -59,6 +58,8 @@ public class OllamaTest {
     @Test
     public void test_model() {
         ChatOptions defaultOptions = ollamaChatModel.getDefaultOptions();
+        System.out.println(defaultOptions.getModel());
+        log.info("默认模型: {}", defaultOptions.getModel());
     }
 
     @Test
