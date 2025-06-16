@@ -12,7 +12,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
   ai:
     openai:
-      base-url: https://pro-share-aws-api.zcyai.com/
+      base-url: https://apis.itedus.cn
       api-key: sk-Gc4MRmuAk3Z13Jc89300C8E5051248A9Ae3bB1615c72A888
       embedding-model: text-embedding-ada-002
       embedding:
