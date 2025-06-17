@@ -9,12 +9,12 @@
         "/Users/macbookair/Desktop"
       ]
     },
-    "mcp-server-computer": {
+    "tony-mcp-server-computer": {
       "command": "java",
       "args": [
         "-Dspring.ai.mcp.server.stdio=true",
         "-jar",
-        "/Users/fuzhengwei/Applications/apache-maven-3.8.4/repository/cn/bugstack/mcp/mcp-server-computer/1.0.0/mcp-server-computer-1.0.0.jar"
+        "/Users/macbookair/.m2/repository/com/study/tony/ai/tony-mcp-server-computer/1.0.0/tony-mcp-server-computer-1.0.0.jar"
       ]
     }
   }

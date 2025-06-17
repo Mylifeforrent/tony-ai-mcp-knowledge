@@ -1,5 +1,6 @@
 package com.study.tony.ai.knowledge.test;
 
+import com.study.tony.ai.knowledge.Application;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -13,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = Application.class)
 public class MCPTest {
 
     @Resource
@@ -39,8 +40,7 @@ public class MCPTest {
     @Test
     public void test() {
         String userInput = "获取电脑配置";
-//        userInput = "在 /Users/fuzhengwei/Desktop 文件夹下，创建 电脑.txt";
-        userInput = "获取电脑配置 在 /Users/fuzhengwei/Desktop 文件夹下，创建 电脑.txt 把电脑配置写入 电脑.txt";
+        userInput = "获取电脑配置 在 /Users/macbookair/Desktop 文件夹下，创建 电脑.txt 把电脑配置写入 电脑.txt";
 
         var chatClient = chatClientBuilder
                 .defaultTools(tools)

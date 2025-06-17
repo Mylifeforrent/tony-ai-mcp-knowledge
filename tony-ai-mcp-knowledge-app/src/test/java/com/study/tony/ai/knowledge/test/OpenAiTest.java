@@ -1,6 +1,7 @@
 package com.study.tony.ai.knowledge.test;
 
 import com.alibaba.fastjson.JSON;
+import com.study.tony.ai.knowledge.Application;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,7 +38,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = Application.class)
 public class OpenAiTest {
 
     @Value("classpath:data/dog.png")

@@ -57,6 +57,7 @@ public class OllamaTest {
 
     @Test
     public void test_model() {
+        System.out.println("hello ollama");
         ChatOptions defaultOptions = ollamaChatModel.getDefaultOptions();
         System.out.println(defaultOptions.getModel());
         log.info("默认模型: {}", defaultOptions.getModel());
