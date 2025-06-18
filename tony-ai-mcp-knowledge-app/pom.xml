@@ -73,6 +73,12 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.study.tony.ai</groupId>
+            <artifactId>tony-ai-mcp-knowledge-trigger</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
 
     </dependencies>
 
