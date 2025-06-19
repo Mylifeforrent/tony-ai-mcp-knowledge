@@ -1,6 +1,5 @@
-package com.study.tony.ai.knowledge.test;
+package cn.bugstack.knowledge.test;
 
-import com.study.tony.ai.knowledge.Application;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -17,14 +16,11 @@ import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvis
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)
+@SpringBootTest
 public class MCPTest {
 
     @Resource
     private ChatClient chatClient;
-
-    @Autowired
-    private ToolCallbackProvider tools;
 
     @Test
     public void test_tool() {
@@ -55,7 +51,6 @@ public class MCPTest {
         System.out.println("\n>>> ASSISTANT: " + chatClient.prompt(userInput).call().content());
     }
 
-
     @Test
     public void test_weixinNotice() {
         String userInput = """
@@ -71,7 +66,7 @@ public class MCPTest {
                                 
                 将以上内容发布文章到CSDN。     
                                 
-                之后进行，微信公众号消息通知，平台：CSDN、主题：为文章标题、描述：为文章简述、跳转地址：从发布文章到CSDN获取 url
+                之后进行，微信公众号消息通知，平台：CSDN、主题：为文章标题、描述：为文章简述、跳转地址：从发布文章到CSDN获取 url 链接地址
                 """;
 
         System.out.println("\n>>> QUESTION: " + userInput);
@@ -115,6 +110,5 @@ public class MCPTest {
                 .call()
                 .content());
     }
-
 
 }
